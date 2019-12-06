@@ -6,11 +6,22 @@
   <title>CSS Grids</title>
   
   <style>
-    .container{
-      display:grid;
-      grid-template-columns: 70% 30%;
-      grid-gap:1em;
+    
+    .container > div {
+      background:#eee;
+      padding:0.5em;
     }
+
+    .container {
+      display:grid;
+      grid-template-columns: 75% 25%;
+      grid-gap:0.7em;
+    }
+
+    .container > div:nth-child(even){
+      background:#ddd;
+    }
+    
   </style>
   
 </head>
