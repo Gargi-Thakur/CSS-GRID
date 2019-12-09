@@ -6,14 +6,21 @@
   <title>CSS Grids</title>
 
   <style>
-      .container {
+  
+     .container {
       display:grid;
-      grid-template-columns: 30% 40% 30%;
-      grid-gap:0.7em;
+      grid-template-columns:repeat(2, 2fr);
+      grid-gap:1.2em;
+      grid-auto-rows: minmax(100px, auto);
     }
 
     .container > div:nth-child(even){
       background:#ddd;
+    }
+    
+    .container > div {
+      background:#eee;
+      padding:0.5em;
     }
   </style>
 
@@ -32,6 +39,30 @@
 
     <div>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat. In porro, repudiandae ipsum voluptatibus ratione enim accusantium rem consequatur ab? Alias tenetur ratione quibusdam accusantium aut quis totam! Voluptas labore officiis, unde sequi ad fuga, ex assumenda dolorem placeat atque excepturi ipsa architecto dolores dignissimos quod quibusdam quasi repellat vero cum perspiciatis laboriosam qui sint exercitationem quisquam. Quisquam suscipit fugiat doloremque quasi ad debitis dolor quaerat nihil aliquam at ducimus consequuntur repudiandae numquam eligendi, fugit, excepturi doloribus!
+    </div>
+
+     <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem sit similique sequi veritatis quas soluta nam alias maxime.
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat.
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat.
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat.
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat.
     </div>
 
   </div>
