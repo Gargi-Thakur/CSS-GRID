@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>CSS Grids</title>
+
+  <style>
+
+     .container {
+      display:grid;
+      grid-template-columns:repeat(3, 4fr);
+      grid-gap:1.2em;
+      grid-auto-rows: minmax(70px, auto);
+    }
+
+
+    .container > div:nth-child(even){
+      background:#ddd;
+    }
+
+    .container > div {
+      background:#eee;
+      padding:0.5em;
+    }
+
+
+  </style>
+
+</head>
+
+ <body>
+  <div class="container">
+
+  
+
+  </div>
+</body>
+
+</html>
 
