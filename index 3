@@ -33,7 +33,10 @@
 
     .box4{
       justify-self: end;
-    }
+      grid-column:1;
+      grid-row:2/4;
+      border:1px solid #333;
+}
 
     .box5{
       align-self: end;
